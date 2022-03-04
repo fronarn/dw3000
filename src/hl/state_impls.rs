@@ -34,6 +34,7 @@ pub struct AutoDoubleBufferReceiving {
 #[derive(Debug)]
 pub struct Sleeping {
 	/// Tx antenna delay isn't stored in AON, so we'll do it ourselves.
+	#[allow(dead_code)]
 	pub(super) tx_antenna_delay: Duration,
 }
 
